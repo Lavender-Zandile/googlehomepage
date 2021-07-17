@@ -1,0 +1,2 @@
+2021-07-18 00:07:17.969 CAT [34496] FATAL:  lock file "postmaster.pid" already exists
+2021-07-18 00:07:17.969 CAT [34496] HINT:  Is another postmaster (PID 5134) running in data directory "/home/zandie/.asdf/installs/postgres/13.2/data"?

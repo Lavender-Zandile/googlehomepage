@@ -1,0 +1,113 @@
+.topnav {
+    background-color: white;
+    overflow: hidden;
+}
+/* links in navbar */
+.topnav a {
+    float: left;
+    color: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* hovering effect on links */
+.topnav {
+    font-family: 'Titillium Web';
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .topnav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+  
+  .topnav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    paddin: 0;
+  }
+  
+  .topnav a {
+    padding: .5em .8em;
+    color: rgba(14, 13, 13, 0.918);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .nav a::before,
+  .nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .topnav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-bottom: 3px solid #0c0c0c;
+    transform: translate(-100%, 50%);
+  }
+  
+  .topnav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #0c0c0c;
+    border-bottom: 3px solid #050505;
+    transform: translate(100%, -50%)
+  }
+  
+  .topnav a:hover:before,
+  .topnav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .topnav a:hover {
+    color: #6184e4;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 100px;
+    }
+    .round {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 5px 5px 5px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.corner {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+    background: #000; /* Set the bg image here. with "no-repeat" */
+}
+
+.search {
+    position: relative;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 100px;
+}
